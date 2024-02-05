@@ -1,10 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Homepage from "../pages/Homepage/Homepage";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Navbar from "../components/Navbar/Navbar";
 
 const Index = () => {
     return (
         <>
+            <Navbar/>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Homepage/>}/>
